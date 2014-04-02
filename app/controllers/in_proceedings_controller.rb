@@ -15,6 +15,8 @@ class InProceedingsController < ApplicationController
   # GET /in_proceedings/new
   def new
     @in_proceeding = InProceeding.new
+    #@author = Author.new
+    @publisher = Publisher.new
   end
 
   # GET /in_proceedings/1/edit
@@ -26,6 +28,7 @@ class InProceedingsController < ApplicationController
   def create
     @in_proceeding = InProceeding.new(in_proceeding_params)
 
+    #@publisher.save
     respond_to do |format|
       if @in_proceeding.save
         format.html { redirect_to @in_proceeding, notice: 'In proceeding was successfully created.' }
@@ -69,6 +72,6 @@ class InProceedingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def in_proceeding_params
-      params.require(:in_proceeding).permit(:title, :booktitle, :year)
+      params.require(:in_proceeding).permit(:title, :booktitle, :year, :author, :name)
     end
 end

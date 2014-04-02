@@ -1,3 +1,5 @@
 class Publisher < ActiveRecord::Base
-  has_and_belongs_to_many :in_proceedings
+  has_many :references
+  has_many :in_proceedings, through: :references
+  has_many :authors, through: :references
 end
