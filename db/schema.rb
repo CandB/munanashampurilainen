@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140402154509) do
+ActiveRecord::Schema.define(version: 20140402163017) do
 
   create_table "authors", force: true do |t|
     t.string   "first_name"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20140402154509) do
 
   create_table "references", force: true do |t|
     t.integer  "author_id"
-    t.integer  "in_proceedings_id"
+    t.integer  "in_proceeding_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "publisher_id"
