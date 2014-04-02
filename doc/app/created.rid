@@ -1,0 +1,13 @@
+Wed, 02 Apr 2014 15:38:47 +0300
+README.rdoc	Wed, 02 Apr 2014 15:08:35 +0300
+app/controllers/application_controller.rb	Wed, 02 Apr 2014 15:08:35 +0300
+app/controllers/authors_controller.rb	Wed, 02 Apr 2014 15:25:04 +0300
+app/controllers/in_proceedings_controller.rb	Wed, 02 Apr 2014 15:23:11 +0300
+app/controllers/publishers_controller.rb	Wed, 02 Apr 2014 15:25:49 +0300
+app/helpers/application_helper.rb	Wed, 02 Apr 2014 15:08:35 +0300
+app/helpers/authors_helper.rb	Wed, 02 Apr 2014 15:25:04 +0300
+app/helpers/in_proceedings_helper.rb	Wed, 02 Apr 2014 15:23:11 +0300
+app/helpers/publishers_helper.rb	Wed, 02 Apr 2014 15:25:49 +0300
+app/models/author.rb	Wed, 02 Apr 2014 15:31:27 +0300
+app/models/in_proceeding.rb	Wed, 02 Apr 2014 15:31:27 +0300
+app/models/publisher.rb	Wed, 02 Apr 2014 15:31:27 +0300

@@ -1,0 +1,29 @@
+<%= form_for(@in_proceeding) do |f| %>
+  <% if @in_proceeding.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@in_proceeding.errors.count, "error") %> prohibited this in_proceeding from being saved:</h2>
+
+      <ul>
+      <% @in_proceeding.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :booktitle %><br>
+    <%= f.text_field :booktitle %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br>
+    <%= f.number_field :year %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
