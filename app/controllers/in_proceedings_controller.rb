@@ -10,6 +10,8 @@ class InProceedingsController < ApplicationController
   # GET /in_proceedings/1
   # GET /in_proceedings/1.json
   def show
+	# Tällä hoidetaan tiedostoon tulostaminen
+	# send_data "asdfasdf", :filename => "bibtex"
   end
 
   # GET /in_proceedings/new
@@ -21,7 +23,7 @@ class InProceedingsController < ApplicationController
 
   # GET /in_proceedings/1/edit
   def edit
-  end
+  end	
 
   # POST /in_proceedings
   # POST /in_proceedings.json
