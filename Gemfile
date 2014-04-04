@@ -9,6 +9,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'simplecov'
   gem 'ci_reporter'
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
 end
 
 # Use SCSS for stylesheets
