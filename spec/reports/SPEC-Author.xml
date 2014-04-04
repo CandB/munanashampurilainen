@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Author" tests="2" time="0.032552" failures="0" errors="0" skipped="0">
+  <testcase name="Author has the names set right" time="0.031069">
+  </testcase>
+  <testcase name="Author has id set right" time="0.001031">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>
