@@ -1,13 +1,18 @@
 Sprint 1
 --------
-Voi lis√§t√§ inproceedings -viitteit‰  
+Voi lis‰t‰ inproceedings -viitteit‰
 Viitteiden lis‰‰mien  
-BiBTeX -tiedoston generointi
+BiBTeX-tiedoston generointi  
+
+Sprint 2
+--------
+Book- ja article -tyyppisten viitteiden lis‰ys  
+BiBTeX-tiedoston generointi  
+Tuottaa BiBTeXin LaTeX-tiedostoon  
 
 Myˆhemmin
 ---------
 Viitteen muokkaaminen  
-book ja article -tyyppisten viitteiden lis‰‰minen  
 Viitelistauksen rajoittaminen  
 Viitteen poistaminen  
 K‰ytt‰j‰ voi tunnistautua  
