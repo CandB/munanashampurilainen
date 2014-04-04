@@ -7,6 +7,8 @@ gem 'rails', '4.0.2'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
 end
 
 # Use SCSS for stylesheets
