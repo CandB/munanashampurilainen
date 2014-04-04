@@ -1,6 +1,6 @@
 Sprint 1
 --------
-Voi lis√§t‰ inproceedings -viitteit‰  
+Voi lis√§t√§ inproceedings -viitteit‰  
 Viitteiden lis‰‰mien  
 BiBTeX -tiedoston generointi
 
