@@ -6,6 +6,7 @@ gem 'rails', '4.0.2'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails'
 end
 
 # Use SCSS for stylesheets
@@ -29,8 +30,6 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'rspec-rails'
-
 gem 'simplecov'
 
 group :doc do
@@ -42,6 +41,8 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+
+gem 'simplecov', require: false
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
