@@ -24,3 +24,11 @@ config/secrets.yml
 /coverage/
 
 .idea/workspace.xml
+
+*.ids
+
+.idea/*
+
+.idea/workspace.xml
+
+.idea/munanashampurilainen.iml
