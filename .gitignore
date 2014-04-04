@@ -20,4 +20,7 @@ config/secrets.yml
 /log/*.log
 /tmp
 
+# Ignore generated test coverage files
+/coverage/
+
 .idea/workspace.xml
