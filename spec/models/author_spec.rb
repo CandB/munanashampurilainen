@@ -11,6 +11,4 @@ describe Author do
   	auth = Author.new first_name:"Matti", last_name:"Meikalainen", id:1
   	auth.id.should == 1
   end
-  
 end
-
