@@ -20,3 +20,10 @@ Then /^the following inproceedings reference should exist:$/ do |table|
     latest[field].to_s.should == value
   end
 end
+
+Then /^the following book reference should exist:$/ do |table|
+  latest = Book.last
+  table.rows_hash.each do |field, value|
+    latest[field].to_s.should == value
+  end
+end
