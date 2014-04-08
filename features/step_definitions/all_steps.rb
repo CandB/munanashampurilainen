@@ -15,7 +15,7 @@ When /^I press (.*)$/ do |button|
 end
 
 Then /^the following inproceedings reference should exist:$/ do |table|
-  latest = InProceeding.last
+  latest = Inproceedings.last
   table.rows_hash.each do |field, value|
     latest[field].to_s.should == value
   end

@@ -1,7 +1,7 @@
 Feature: Adding inproceedings -type references
   
   Scenario: Add valid inproceedings reference
-    Given I am on the in_proceedings page
+    Given I am on the inproceedings page
       And I navigate to New
     When I fill in Fdsa as Title
      And I fill in DDDffff as Booktitle
