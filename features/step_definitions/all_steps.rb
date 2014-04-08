@@ -27,3 +27,7 @@ Then /^the following book reference should exist:$/ do |table|
     latest[field].to_s.should == value
   end
 end
+
+Then /^I should get an error$/ do
+  page.should have_content('error')
+end
