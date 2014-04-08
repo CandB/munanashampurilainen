@@ -1,3 +1,4 @@
+@wip
 Feature: Adding book -type references
 
   Scenario: Add valid book reference with author
