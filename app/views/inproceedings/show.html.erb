@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @inproceedings.author %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @inproceedings.title %>
+</p>
+
+<p>
+  <strong>Booktitle:</strong>
+  <%= @inproceedings.booktitle %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @inproceedings.year %>
+</p>
+
+<%= link_to 'Edit', edit_inproceedings_path(@inproceedings) %> |
+<%= link_to 'Back', inproceedings_index_path %>

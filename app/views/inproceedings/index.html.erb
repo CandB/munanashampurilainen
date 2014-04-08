@@ -1,0 +1,33 @@
+<h1>Listing inproceedings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Author</th>
+      <th>Title</th>
+      <th>Booktitle</th>
+      <th>Year</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @inproceedings.each do |inproceedings| %>
+      <tr>
+        <td><%= inproceedings.author %></td>
+        <td><%= inproceedings.title %></td>
+        <td><%= inproceedings.booktitle %></td>
+        <td><%= inproceedings.year %></td>
+        <td><%= link_to 'Show', inproceedings %></td>
+        <td><%= link_to 'Edit', edit_inproceedings_path(inproceedings) %></td>
+        <td><%= link_to 'Destroy', inproceedings, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Inproceedings', new_inproceedings_path %>

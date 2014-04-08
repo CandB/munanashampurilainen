@@ -1,4 +1,6 @@
 Munanashampurilainen::Application.routes.draw do
+  resources :inproceedings
+
   resources :publishers
   resources :authors
   # The priority is based upon order of creation: first created -> highest priority.
