@@ -1,0 +1,29 @@
+<p>
+<table>
+ <thead>
+   <th>inproceedings</th>
+ </thead>
+ <tbody>
+   <% @Inproceedings.each do |i| %>
+   <tr>
+    <td><%= link_to i.title, i  %></td>
+   </tr>
+   <% end %>
+ </tbody>
+</table>
+</p>
+
+<p>
+<table>
+  <thead>
+  <th>authors</th>
+  </thead>
+  <tbody>
+  <% @Authors.each do |i| %>
+      <tr>
+        <td><%= link_to i.last_name, i  %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+</p>
