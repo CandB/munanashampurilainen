@@ -1,4 +1,8 @@
 Munanashampurilainen::Application.routes.draw do
+  resources :books
+
+  resources :articles
+
   resources :inproceedings
 
   resources :publishers
