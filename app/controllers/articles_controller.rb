@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+  respond_to :html, :json, :bib
 
   # GET /articles
   # GET /articles.json
@@ -10,6 +11,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
+    respond_with @book
   end
 
   # GET /articles/new
