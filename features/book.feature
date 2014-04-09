@@ -28,17 +28,19 @@ Feature: Adding book -type references
       |publisher|DDDffff|
       |year|1991|
 
-  Scenario: Add valid book reference with multiple authors
+  Scenario: Add valid book reference with both author and editor
     Given I am on the books page
       And I navigate to New
     When I fill in Fdsa as Title
-     And I fill in FDfdf and Ghfdsf as Author
+     And I fill in FDfdf as Author
+     And I fill in FDfdf666 as Editor
      And I fill in DDDffff as Publisher
      And I fill in 1991 as Year
      And I press Create
     Then the following book reference should exist:
-      |author|FDfdf and Ghfdsf|
+      |author|FDfdf|
       |title|Fdsa|
+      |editor|FDfdf666|
       |publisher|DDDffff|
       |year|1991|
 
@@ -50,4 +52,24 @@ Feature: Adding book -type references
      And I fill in FDfdf as Author
      And I fill in 1991 as Year
      And I press Create
+    Then I should get an error
+
+  @wip
+  Scenario: Add book reference missing year
+    Given I am on the books page
+      And I navigate to New
+    When I fill in Fdsa as Title
+      And I fill in FDfdf as Author
+      And I fill in DDDffff as Publisher
+      And I press Create
+    Then I should get an error
+
+  @wip
+  Scenario: Add book reference missing title
+    Given I am on the books page
+      And I navigate to New
+    When I fill in FDfdf as Author
+      And I fill in DDDffff as Publisher
+      And I fill in 1991 as Year
+      And I press Create
     Then I should get an error
