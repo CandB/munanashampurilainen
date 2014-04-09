@@ -1,5 +1,6 @@
 class InproceedingsController < ApplicationController
   before_action :set_inproceedings, only: [:show, :edit, :update, :destroy]
+  respond_to :html, :json, :bib
 
   # GET /inproceedings
   # GET /inproceedings.json
@@ -9,7 +10,9 @@ class InproceedingsController < ApplicationController
 
   # GET /inproceedings/1
   # GET /inproceedings/1.json
+  # GET /inproceedings/1.bib
   def show
+    respond_with @inproceedings
   end
 
   # GET /inproceedings/new
