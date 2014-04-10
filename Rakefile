@@ -5,6 +5,6 @@ require File.expand_path('../config/application', __FILE__)
 
 Munanashampurilainen::Application.load_tasks
 
-require 'ci/reporter/rake/rspec'
+# require 'ci/reporter/rake/rspec'
 
 task :test => "ci:setup:rspec"
