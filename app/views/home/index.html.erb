@@ -1,7 +1,7 @@
 <p>
 <table>
  <thead>
-   <th>inproceedings</th>
+   <th>Inproceedings</th>
  </thead>
  <tbody>
    <% @Inproceedings.each do |i| %>
@@ -16,12 +16,27 @@
 <p>
 <table>
   <thead>
-  <th>authors</th>
+  <th>Articles</th>
   </thead>
   <tbody>
-  <% @Authors.each do |i| %>
+  <% @Articles.each do |i| %>
       <tr>
-        <td><%= link_to i.last_name, i  %></td>
+        <td><%= link_to i.title, i  %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+</p>
+
+<p>
+<table>
+  <thead>
+  <th>Books</th>
+  </thead>
+  <tbody>
+  <% @Books.each do |i| %>
+      <tr>
+        <td><%= link_to i.title, i  %></td>
       </tr>
   <% end %>
   </tbody>
