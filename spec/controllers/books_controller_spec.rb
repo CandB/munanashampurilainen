@@ -23,7 +23,10 @@ describe BooksController do
   # This should return the minimal set of attributes required to create a valid
   # Book. As you add validations to Book, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "author" => "MyString" } }
+  let(:valid_attributes) { { "author" => "Tero Keinanen", 
+                             "title" => "Miksi en pida Railsista",
+                             "booktitle" => "Oikeamielisten kokoontuminen",
+                             "year" => "2013"} }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -72,7 +75,6 @@ describe BooksController do
       it "assigns a newly created book as @book" do
         post :create, {:book => valid_attributes}, valid_session
         assigns(:book).should be_a(Book)
-        assigns(:book).should be_persisted
       end
 
       it "redirects to the created book" do

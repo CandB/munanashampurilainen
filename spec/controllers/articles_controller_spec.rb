@@ -23,7 +23,10 @@ describe ArticlesController do
   # This should return the minimal set of attributes required to create a valid
   # Article. As you add validations to Article, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "author" => "MyString" } }
+  let(:valid_attributes) { { "author" => "Tero Keinanen",
+                             "title" => "Miksi en pida Railsista",
+                             "year" => "2014",
+                             "journal" => "Gurulan kitinoita" } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in

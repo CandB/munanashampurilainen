@@ -23,8 +23,8 @@ describe InproceedingsController do
   # This should return the minimal set of attributes required to create a valid
   # Inproceedings. As you add validations to Inproceedings, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "author" => "Tero Keinänen", 
-                             "title" => "Miksi en pidä Railsista",
+  let(:valid_attributes) { { "author" => "Tero Keinanen", 
+                             "title" => "Miksi en pida Railsista",
                              "booktitle" => "Oikeamielisten kokoontuminen",
                              "year" => "2013"} }
 
