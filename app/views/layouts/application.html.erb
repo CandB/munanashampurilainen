@@ -7,7 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class="navibar">
+  <%= link_to 'Home', root_path %>
+  <%= link_to 'Books', books_path %>
+  <%= link_to 'Articles', articles_path %>
+  <%= link_to 'Inproceedings', inproceedings_index_path %>
+</div>
 <%= yield %>
 
 </body>
