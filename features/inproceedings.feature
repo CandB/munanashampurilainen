@@ -21,4 +21,22 @@ Feature: Adding inproceedings -type references
       And I fill in 1991 as Year
       And I fill in FDfdf as Author
       And I press Create
+    Then I should get an error
+
+  Scenario: Add inproceedings reference without author
+    Given I am on the inproceedings page
+      And I navigate to New
+    When I fill in Fdsa as Title
+      And I fill in DDDffff as Booktitle
+      And I fill in 1991 as Year
+      And I press Create
+    Then I should get an error 
+
+  Scenario: Add inproceedings reference without title
+    Given I am on the inproceedings page
+      And I navigate to New
+    When I fill in Fdsa as Booktitle
+      And I fill in 1991 as Year
+      And I fill in FDfdf as Author
+      And I press Create
     Then I should get an error 
