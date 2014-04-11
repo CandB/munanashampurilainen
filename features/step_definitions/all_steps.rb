@@ -31,3 +31,10 @@ end
 Then /^I should get an error$/ do
   page.should have_content('error')
 end
+
+Then(/^the following article reference should exist:$/) do |table|
+  latest = Article.last
+  table.rows_hash.each do |field, value|
+    latest[field].to_s.should == value
+  end
+end
