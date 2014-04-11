@@ -14,6 +14,7 @@ Feature: Adding inproceedings -type references
       |booktitle|DDDffff|
       |year|1991|
 
+  @wip
   Scenario: Add inproceedings reference without booktitle
     Given I am on the inproceedings page
       And I navigate to New
@@ -23,6 +24,7 @@ Feature: Adding inproceedings -type references
       And I press Create
     Then I should get an error
 
+  @wip
   Scenario: Add inproceedings reference without author
     Given I am on the inproceedings page
       And I navigate to New
@@ -30,8 +32,9 @@ Feature: Adding inproceedings -type references
       And I fill in DDDffff as Booktitle
       And I fill in 1991 as Year
       And I press Create
-    Then I should get an error 
+    Then I should get an error
 
+  @wip
   Scenario: Add inproceedings reference without title
     Given I am on the inproceedings page
       And I navigate to New
