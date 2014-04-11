@@ -11,7 +11,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
-    respond_with @book
+    respond_with @article
   end
 
   # GET /articles/new
