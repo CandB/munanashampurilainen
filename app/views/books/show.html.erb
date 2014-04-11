@@ -25,5 +25,6 @@
   <%= @book.year %>
 </p>
 
+<%= link_to 'Bib', book_path(@book)+".bib" %> |
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>

@@ -20,5 +20,6 @@
   <%= @inproceedings.year %>
 </p>
 
+<%= link_to 'Bib', inproceedings_path(@inproceedings)+".bib" %> |
 <%= link_to 'Edit', edit_inproceedings_path(@inproceedings) %> |
 <%= link_to 'Back', inproceedings_index_path %>
