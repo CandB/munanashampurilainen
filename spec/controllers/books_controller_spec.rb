@@ -25,8 +25,9 @@ describe BooksController do
   # adjust the attributes here as well.
   let(:valid_attributes) { { "author" => "Tero Keinanen", 
                              "title" => "Miksi en pida Railsista",
-                             "booktitle" => "Oikeamielisten kokoontuminen",
-                             "year" => "2013"} }
+                             "editor" => "",
+                             "year" => "2013",
+                             "publisher" => "C et B bublishings"} }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
