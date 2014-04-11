@@ -44,32 +44,36 @@ Feature: Adding book -type references
       |publisher|DDDffff|
       |year|1991|
 
-  @wip
-  Scenario: Add book reference missing publisher
+  Scenario: Add book reference with no publisher
     Given I am on the books page
       And I navigate to New
     When I fill in Fdsa as Title
      And I fill in FDfdf as Author
      And I fill in 1991 as Year
-     And I press Create
-    Then I should get an error
+     And I fill in Adlkajf as Editor
+    And I press Create
+    Then the following book reference should exist:
+      |author|FDfdf|
+      |title|Fdsa|
+      |editor|Adlkajf|
+      |year|1991|
 
-  @wip
   Scenario: Add book reference missing year
     Given I am on the books page
       And I navigate to New
     When I fill in Fdsa as Title
       And I fill in FDfdf as Author
       And I fill in DDDffff as Publisher
+      And I fill in Adlkajf as Editor
       And I press Create
     Then I should get an error
 
-  @wip
   Scenario: Add book reference missing title
     Given I am on the books page
       And I navigate to New
     When I fill in FDfdf as Author
       And I fill in DDDffff as Publisher
       And I fill in 1991 as Year
-      And I press Create
+      And I fill in Adlkajf as Editor
+    And I press Create
     Then I should get an error
