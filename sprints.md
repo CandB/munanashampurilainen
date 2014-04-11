@@ -9,12 +9,16 @@ Sprint 2
 Book- ja article -tyyppisten viitteiden lisäys  
 BiBTeX-tiedoston generointi  
 Tuottaa BiBTeXin LaTeX-tiedostoon  
+Viitteen muokkaaminen
+Viitteen poistaminen
+
+Sprint 3
+--------
+Tuottaa BiBTeXin LaTeX-tiedostoon  
+Muidentyyppisten viitteiden lisääminen  
+Viitteiden crawlaaminen ACM:stä  
 
 Myöhemmin
 ---------
-Viitteen muokkaaminen  
 Viitelistauksen rajoittaminen  
-Viitteen poistaminen  
 Käyttäjä voi tunnistautua  
-Viitteen crawlaaminen ACM:stä  
-Muidentyyppisten viitteiden lisääminen  
