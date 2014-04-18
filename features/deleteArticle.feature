@@ -11,5 +11,5 @@ Feature: Remove article -type references
       And I press Create
       And I press Back
       And I press Destroy
-      And I confirm
+      # And I confirm
     Then the given article reference shouldn't exist
