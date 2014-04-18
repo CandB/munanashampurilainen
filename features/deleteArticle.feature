@@ -1,4 +1,4 @@
-@javascript
+# @javascript
 Feature: Remove article -type references
 
   Scenario: Remove an existing article
