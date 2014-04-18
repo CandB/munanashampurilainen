@@ -3,7 +3,7 @@ Given /^I am on the (.*) page$/ do |page|
 end
 
 Given /^I navigate to (.*)$/ do |link|
-  click_link link
+  click_link(link, :match => :first)
 end
 
 When /^I fill in (.*) as (.*)$/ do |stuff, field|
@@ -39,7 +39,7 @@ Then(/^the following article reference should exist:$/) do |table|
   end
 end
 
-Then (/^the following article reference shouldn't exist:$/) do |table|
+Then(/^the given article reference shouldn't exist$/) do
   Article.find_by_title("Fdsa").should == nil
 end
 
