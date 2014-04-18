@@ -28,13 +28,18 @@ Then /^the following book reference should exist:$/ do |table|
   end
 end
 
-Then /^I should get an error$/ do
-  page.should have_content('error')
-end
-
 Then(/^the following article reference should exist:$/) do |table|
   latest = Article.last
   table.rows_hash.each do |field, value|
     latest[field].to_s.should == value
   end
 end
+
+Then (/^the following article reference shouldn't exist:$/) do |table|
+  Article.find_by_title("Fdsa").should == nil
+end
+
+Then /^I should get an error$/ do
+  page.should have_content('error')
+end
+
