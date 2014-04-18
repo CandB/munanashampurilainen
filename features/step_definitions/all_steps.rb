@@ -15,7 +15,7 @@ When /^I press (.*)$/ do |button|
 end
 
 When /^I confirm$/ do
-  page.driver.browser.switch_to.alert.accept
+  page.evaluate_script('window.confirm = function() { return true; }')
 end
 
 Then /^the following inproceedings reference should exist:$/ do |table|

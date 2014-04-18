@@ -10,6 +10,7 @@ group :development, :test do
   gem 'simplecov'
   gem 'ci_reporter', :require => false
   gem 'cucumber-rails', :require => false
+  gem 'selenium-webdriver', '~> 2.41.0'
   gem 'database_cleaner'
   gem 'turn', :require => false
 end
