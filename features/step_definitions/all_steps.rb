@@ -14,6 +14,10 @@ When /^I press (.*)$/ do |button|
   click_on button
 end
 
+When /^I confirm$/ do
+  page.driver.browser.switch_to.alert.accept
+end
+
 Then /^the following inproceedings reference should exist:$/ do |table|
   latest = Inproceedings.last
   table.rows_hash.each do |field, value|
