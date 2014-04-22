@@ -43,6 +43,14 @@ Then(/^the given article reference shouldn't exist$/) do
   Article.find_by_title("Fdsa").should == nil
 end
 
+Then(/^the given book reference shouldn't exist$/) do
+  Book.find_by_title("Fdsa").should == nil
+end
+
+Then(/^the given inproceedings reference shouldn't exist$/) do
+  Inproceedings.find_by_title("Fdsa").should == nil
+end
+
 Then /^I should get an error$/ do
   page.should have_content('error')
 end
