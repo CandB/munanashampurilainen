@@ -6,5 +6,11 @@ class HomeController < ApplicationController
 	  @Publishers = Publisher.all
 	  @References = Reference.all
 	  @Inproceedings = Inproceedings.all
+    @Incolletions = Incollection.all
+
+    @AllOfThem = Article.all
+    @AllOfThem << Book.all
+    @AllOfThem << Inproceedings.all
+    @AllOfThem << Incollection.all
   end
 end

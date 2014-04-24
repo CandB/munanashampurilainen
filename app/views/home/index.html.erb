@@ -18,6 +18,23 @@
 <p>
 <table>
   <thead>
+  <th>Incollections</th>
+  </thead>
+  <tbody>
+  <% @Incolletions.each do |i| %>
+      <tr>
+        <td><%= link_to i.title, i  %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<%= link_to 'New incollection', new_incollection_path %>
+<%= link_to 'List all', incollections_path %>
+</p>
+
+<p>
+<table>
+  <thead>
   <th>Articles</th>
   </thead>
   <tbody>
@@ -48,3 +65,5 @@
 <%= link_to 'New book', new_book_path %>
 <%= link_to 'List all', books_path %>
 </p>
+
+
