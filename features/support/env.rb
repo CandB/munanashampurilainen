@@ -5,8 +5,9 @@
 # files.
 
 require 'cucumber/rails'
-require 'selenium-webdriver'
+# require 'selenium-webdriver'
 
+Capybara.javascript_driver = :webkit
 # Capybara.default_driver = :selenium
 
 # Capybara defaults to CSS3 selectors rather than XPath.
