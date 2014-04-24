@@ -1,5 +1,7 @@
 Munanashampurilainen::Application.routes.draw do
 
+  resources :incollections
+
   root 'home#index'
   resources :inproceedings
   resources :publishers
