@@ -1,8 +1,7 @@
 Munanashampurilainen::Application.routes.draw do
 
-  resources :incollections
-
   root 'home#index'
+  resources :incollections
   resources :inproceedings
   resources :publishers
   resources :authors
