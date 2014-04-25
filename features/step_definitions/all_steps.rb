@@ -39,7 +39,7 @@ Then(/^the following article reference should exist:$/) do |table|
   end
 end
 
-Then /^the following inncollection reference should exist:$/ do |table|
+Then /^the following incollection reference should exist:$/ do |table|
   latest = Incollection.last
   table.rows_hash.each do |field, value|
     latest[field].to_s.should == value
