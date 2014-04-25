@@ -39,8 +39,8 @@ Then(/^the following article reference should exist:$/) do |table|
   end
 end
 
-Then /^the following inoncollection reference should exist:$/ do |table|
-  latest = Inpcollection.last
+Then /^the following incollection reference should exist:$/ do |table|
+  latest = Incollection.last
   table.rows_hash.each do |field, value|
     latest[field].to_s.should == value
   end
@@ -58,7 +58,7 @@ Then(/^the given inproceedings reference shouldn't exist$/) do
   Inproceedings.find_by_title("Fdsa").should == nil
 end
 
-Then(/^the given inproceedings reference shouldn't exist$/) do
+Then(/^the given incollection reference shouldn't exist$/) do
   Incollection.find_by_title("Fdsa").should == nil
 end
 
