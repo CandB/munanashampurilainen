@@ -15,7 +15,7 @@ group :development, :test do
   gem 'turn', :require => false
 end
 
-gem 'bootstrap-sass' 
+gem 'bootstrap-sass'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
