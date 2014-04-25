@@ -58,7 +58,7 @@ Then(/^the given inproceedings reference shouldn't exist$/) do
   Inproceedings.find_by_title("Fdsa").should == nil
 end
 
-Then(/^the given inproceedings reference shouldn't exist$/) do
+Then(/^the given incollections reference shouldn't exist$/) do
   Incollection.find_by_title("Fdsa").should == nil
 end
 
