@@ -1,0 +1,35 @@
+<h1>Listing incollections</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Author</th>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Booktitle</th>
+      <th>Publisher</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @incollections.each do |incollection| %>
+      <tr>
+        <td><%= incollection.author %></td>
+        <td><%= incollection.title %></td>
+        <td><%= incollection.year %></td>
+        <td><%= incollection.booktitle %></td>
+        <td><%= incollection.publisher %></td>
+        <td><%= link_to 'Show', incollection %></td>
+        <td><%= link_to 'Edit', edit_incollection_path(incollection) %></td>
+        <td><%= link_to 'Destroy', incollection, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Incollection', new_incollection_path %>

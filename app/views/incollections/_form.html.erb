@@ -1,0 +1,37 @@
+<%= form_for(@incollection) do |f| %>
+  <% if @incollection.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@incollection.errors.count, "error") %> prohibited this incollection from being saved:</h2>
+
+      <ul>
+      <% @incollection.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :author %><br>
+    <%= f.text_field :author %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br>
+    <%= f.number_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :booktitle %><br>
+    <%= f.text_field :booktitle %>
+  </div>
+  <div class="field">
+    <%= f.label :publisher %><br>
+    <%= f.text_field :publisher %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

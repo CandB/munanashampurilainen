@@ -1,0 +1,2 @@
+module IncollectionsHelper
+end

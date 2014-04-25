@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @incollection.author %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @incollection.title %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @incollection.year %>
+</p>
+
+<p>
+  <strong>Booktitle:</strong>
+  <%= @incollection.booktitle %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @incollection.publisher %>
+</p>
+
+<%= link_to 'Edit', edit_incollection_path(@incollection) %> |
+<%= link_to 'Back', incollections_path %>
