@@ -34,3 +34,6 @@ config/secrets.yml
 .idea/munanashampurilainen.iml
 
 db/schema.rb
+
+# Ignore apple .DS_Store -files
+*.DS_Store
