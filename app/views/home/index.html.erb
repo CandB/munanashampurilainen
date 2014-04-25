@@ -1,69 +1,116 @@
-<p>
-<table>
- <thead>
-   <th>Inproceedings</th>
- </thead>
- <tbody>
-   <% @Inproceedings.each do |i| %>
-   <tr>
-    <td><%= link_to i.title, i  %></td>
-   </tr>
-   <% end %>
- </tbody>
-</table>
-<%= link_to 'New inproceedings', new_inproceedings_path %>
-<%= link_to 'List all', inproceedings_index_path %>
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading"><h4>Inproceedings</h4>
 
-<p>
-<table>
-  <thead>
-  <th>Incollections</th>
-  </thead>
-  <tbody>
-  <% @Incolletions.each do |i| %>
-      <tr>
-        <td><%= link_to i.title, i  %></td>
-      </tr>
-  <% end %>
-  </tbody>
-</table>
-<%= link_to 'New incollection', new_incollection_path %>
-<%= link_to 'List all', incollections_path %>
-</p>
+  </div>
+  <table class="table">
+    <tbody>
+    <% @Inproceedings.each do |i| %>
+        <tr>
+          <td><%= link_to i.title, i  %></td>
+        </tr>
+    <% end %>
+    <tfoot>
+    <th>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle btn-xs" data-toggle="dropdown">
+          Actions <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><%= link_to 'New inproceedings', new_inproceedings_path %></li>
+          <li><%= link_to 'List all', inproceedings_index_path %></li>
+        </ul>
+      </div>
+    </th>
+    </tfoot>
+    </tbody>
+  </table>
+</div>
 
-<p>
-<table>
-  <thead>
-  <th>Articles</th>
-  </thead>
-  <tbody>
-  <% @Articles.each do |i| %>
-      <tr>
-        <td><%= link_to i.title, i  %></td>
-      </tr>
-  <% end %>
-  </tbody>
-</table>
-<%= link_to 'New article', new_article_path %>
-<%= link_to 'List all', articles_path %>
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading"><h4>Incollections</h4>
 
-<p>
-<table>
-  <thead>
-  <th>Books</th>
-  </thead>
-  <tbody>
-  <% @Books.each do |i| %>
-      <tr>
-        <td><%= link_to i.title, i  %></td>
-      </tr>
-  <% end %>
-  </tbody>
-</table>
-<%= link_to 'New book', new_book_path %>
-<%= link_to 'List all', books_path %>
-</p>
+  </div>
+  <table class="table">
+    <tbody>
+    <% @Incolletions.each do |i| %>
+        <tr>
+          <td><%= link_to i.title, i  %></td>
+        </tr>
+    <% end %>
+    <tfoot>
+    <th>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle btn-xs" data-toggle="dropdown">
+          Actions <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><%= link_to 'New incollections', new_incollection_path %></li>
+          <li><%= link_to 'List all', incollections_path %></li>
+        </ul>
+      </div>
+    </th>
+    </tfoot>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading"><h4>Articles</h4>
+
+  </div>
+  <table class="table">
+    <tbody>
+    <% @Articles.each do |i| %>
+        <tr>
+          <td><%= link_to i.title, i  %></td>
+        </tr>
+    <% end %>
+    <tfoot>
+    <th>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle btn-xs" data-toggle="dropdown">
+          Actions <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><%= link_to 'New article', new_article_path %></li>
+          <li><%= link_to 'List all', articles_path %></li>
+        </ul>
+      </div>
+    </th>
+    </tfoot>
+    </tbody>
+  </table>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><h4>Books</h4>
+
+  </div>
+  <table class="table">
+    <tbody>
+    <% @Books.each do |i| %>
+        <tr>
+          <td><%= link_to i.title, i  %></td>
+        </tr>
+    <% end %>
+    <tfoot>
+    <th>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle btn-xs" data-toggle="dropdown">
+          Actions <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><%= link_to 'New article', new_book_path %></li>
+          <li><%= link_to 'List all', books_path %></li>
+        </ul>
+      </div>
+    </th>
+    </tfoot>
+    </tbody>
+  </table>
+</div>
+
+
 
 
